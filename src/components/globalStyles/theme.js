@@ -1,11 +1,6 @@
 const theme = {
-    colors:{
-
-    },
-    screens:{
-
-    },
-
+    colors:{},
+    screens:{}
 }
 
 export default theme;
