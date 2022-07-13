@@ -17,10 +17,24 @@ export const Logo = styled(Link)`
     font-weight: 400;
     color: ${({ theme }) => theme.colors.mainColor};
   }
-`
-export const Menu = styled(Flex)`
+`;
 
-`
+export const Hamburger = styled.div`
+display: none;
+cursor: pointer;
+color:${({theme})=>theme.colors.mainColors};
+@media (max-width: ${({theme})=>theme.screens.lg}){
+    display: block
+}
+`;
+export const Menu = styled(Flex)`
+@media (max-width: ${({theme})=>theme.screens.lg}){
+    flex-direction: column;
+    width:100%;
+    max-height:${({isOpen})=>isOpen ? '400px' : '0'};
+    overflow: hidden;
+    }
+`;
 
 export const MenuLink = styled(Link)`
     text-align: center;

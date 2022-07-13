@@ -5,7 +5,9 @@ const theme = {
     ogoColor: "#393e46",
     linkColor: "#02475e",
   },
-  screens: {},
+  screens: {
+    lg:"900px",
+  },
 };
 
 export default theme;
